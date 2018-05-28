@@ -84,7 +84,7 @@ public class Jpa {
 
 	@Bean(autowire = Autowire.BY_NAME)
 	public Database jpaVendorDatabase() {
-		return Database.H2;
+		return Database.POSTGRESQL;
 	}
 
 	@Bean(autowire = Autowire.BY_NAME)

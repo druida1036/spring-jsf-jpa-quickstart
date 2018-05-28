@@ -84,12 +84,6 @@
 			<artifactId>h2</artifactId>
 			<version>1.4.192</version>
 		</dependency>
-		<!-- BUILTIN POSTGRESQL JDBC DRIVER -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4.1209.jre7</version>
-		</dependency>
 		<!-- BUILTIN MYSQL JDBC DRIVER -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -102,6 +96,13 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.2.2.Final</version>
+		</dependency>
+		
+	    <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.2</version>
 		</dependency>
 
 		<!-- SPRING -->
