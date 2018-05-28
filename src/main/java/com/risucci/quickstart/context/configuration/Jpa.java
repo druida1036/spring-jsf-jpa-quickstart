@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hibernate.dialect.H2Dialect;
+import org.hibernate.dialect.PostgreSQL9Dialect;
 import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -139,7 +139,7 @@ public class Jpa {
 
 	@Bean(autowire = Autowire.BY_NAME)
 	public String jpaVendorDialect() {
-		return H2Dialect.class.getName();
+		return PostgreSQL9Dialect.class.getName();
 	}
 
 	@Bean(autowire = Autowire.BY_NAME)
